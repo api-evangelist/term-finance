@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/ on Term Finance hosts
+note: >-
+  Term Finance is a noncustodial on-chain protocol (smart contracts, not a hosted
+  REST API). No /.well-known/ discovery documents are published on any host. All
+  paths probed returned 404 or a soft-404 SPA shell. Recorded as an honest
+  none-result; no WellKnown/SecurityTxt pointer is wired.
+hosts:
+- host: https://www.term.finance
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://developers.term.finance
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://app.term.finance
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: soft-404 SPA shell (index.html), not a real RFC 9116 security.txt
+documents: []

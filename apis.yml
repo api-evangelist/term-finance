@@ -1,8 +1,28 @@
 aid: term-finance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/term-finance.png
 name: Term Finance
-description: 'Term Finance is a company surfaced as a portfolio company of electric-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: defi. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Term Finance is a noncustodial, fixed-rate lending and borrowing protocol for
+  crypto assets, modeled on the tri-party repo arrangements common in traditional
+  finance (TradFi). Liquidity suppliers and takers are matched through a weekly
+  blind double-auction that aggregates bids and offers into a single
+  market-clearing rate, while collateral backing each loan sits in isolated,
+  non-rehypothecatable smart contracts known as repoLockers. The protocol is
+  deployed across Ethereum, Avalanche, Base, BNB Smart Chain and Plasma, and its
+  Solidity contracts have been audited by Sigma Prime, Runtime Verification,
+  Dedaub and Certora. Term Finance is developer-facing primarily through on-chain
+  smart contracts and a Solidity API reference rather than a hosted REST API.
 url: https://raw.githubusercontent.com/api-evangelist/term-finance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Defi
+- DeFi
+- Lending
+- Fixed Rate
+- Blockchain
+- Ethereum
+- Smart Contracts
+- Auctions
+- Repo
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,30 @@ maintainers:
 common:
 - type: Website
   url: https://www.term.finance/
+- type: DeveloperPortal
+  url: https://developers.term.finance/
+- type: Documentation
+  url: https://docs.term.finance/
+- type: APIReference
+  url: https://developers.term.finance/latest
+- type: GitHubOrganization
+  url: https://github.com/term-finance
+- type: Blog
+  url: https://term.finance/blog
+- type: Support
+  url: https://discord.gg/cFVMQNHRsx
+- type: Application
+  url: https://app.term.finance/
+- type: TermsOfService
+  url: https://docs.term.finance/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://docs.term.finance/legal/privacy-policy
+- type: LLMsTxt
+  url: llms/term-finance-llms.txt
+- type: DomainSecurity
+  url: security/term-finance-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
